@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp">
+<RelativeLayout
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/layoutSingleItemHome"
+
+   >
+
+
+
+    <ImageView
+        android:id="@+id/imgRest"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_person"
+
+        />
+
+    <TextView
+        android:id="@+id/tvNameRest"
+        android:layout_toRightOf="@+id/imgRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foodies"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgRest"
+        android:text="Rs 15"
+        android:layout_below="@+id/tvNameRest"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_dollar"
+
+
+
+        />
+
+    <ImageView
+        android:id="@+id/imgFavorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_favorite"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.2"
+        android:layout_below="@+id/imgFavorite"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/light_yellow"
+        android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
